@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;700;800&family=Barlow:wght@400;600&family=Sacramento&display=swap');
+/* MAPA · Uma tarde em Pinheiros. Fontes da marca, hospedadas na pasta do Guia ON. */
+
+:root { --vinho: #620c24; --off: #f4efe8; --tinta: #3c1e24; --rose: #e2c8c4; }
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--off); color: var(--tinta); font-family: 'Barlow', system-ui, sans-serif; }
+main { max-width: 560px; margin: 0 auto; }
+header { text-align: center; padding: 28px 20px 8px; }
+.logo { width: 56px; height: 56px; color: var(--vinho); }
+.assina { font: 600 12px 'Barlow', sans-serif; color: var(--vinho); margin-top: 2px; }
+h1 { font: 700 66px/1 'Outfit', sans-serif; color: var(--vinho); margin: 18px 0 0; letter-spacing: 2px; }
+.cursiva { font: clamp(36px, 11vw, 52px)/1.1 'Sacramento', cursive; color: var(--vinho); margin: 4px auto 10px; max-width: 340px; overflow-wrap: break-word; }
+.quando { font-size: 19px; margin: 0; }
+.dica { font-size: 14px; color: var(--vinho); margin: 6px 0 0; }
+.rota { position: relative; padding: 18px 16px 28px; }
+.parada { display: grid; grid-template-columns: 52px 1fr; gap: 12px; margin-top: 22px; }
+.pino { width: 52px; height: 52px; border-radius: 50%; background: var(--vinho); display: grid; place-items: center; position: relative; z-index: 1; }
+.pino svg { width: 28px; height: 28px; stroke: var(--off); fill: none; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+.cat { font: 600 13px 'Barlow', sans-serif; letter-spacing: 1px; color: var(--vinho); margin: 15px 0 8px; }
+.lugares { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.lugares.um { grid-template-columns: 1fr; }
+a.lugar { display: block; text-decoration: none; color: inherit; padding: 8px 10px; margin: -8px -10px; border-radius: 12px; }
+a.lugar:active { background: rgba(98, 12, 36, .08); }
+.nome { font: 700 22px/1.15 'Outfit', sans-serif; color: var(--tinta); }
+.end { font: 600 14px/1.3 'Barlow', sans-serif; color: var(--vinho); margin: 4px 0 3px; }
+.txt { font-size: 14.5px; line-height: 1.35; }
+.linha { position: absolute; left: 41px; top: 40px; bottom: 60px; border-left: 3px dotted var(--vinho); z-index: 0; }
+footer { background: var(--vinho); color: var(--off); text-align: center; padding: 28px 20px 36px; }
+footer p { margin: 0; }
+.f1 { font-size: 16px; }
+.f2 { font: 700 21px/1.25 'Outfit', sans-serif; margin-top: 8px; }
+.botao { display: inline-block; margin-top: 20px; background: var(--off); color: var(--vinho); text-decoration: none; padding: 15px 26px; border-radius: 999px; font: 400 17px 'Barlow', sans-serif; }
+.botao b { font: 700 17px 'Outfit', sans-serif; }
+.arroba { color: var(--rose); font-size: 14px; margin-top: 18px; }
+@media (max-width: 360px) { .lugares { grid-template-columns: 1fr; } h1 { font-size: 56px; } }
